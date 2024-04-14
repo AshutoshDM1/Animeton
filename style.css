@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(255, 25, 140);
+  background-color: rgb(39, 255, 215);
+  text-align: center;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background: #ccffaa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 4%;
+}
+
+#div1 {
+  position: relative;
+  height: 50%;
+  width: 30vw;
+  background: #7bff23;
+  border: 2px solid black;
+}
