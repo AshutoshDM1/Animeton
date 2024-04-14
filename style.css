@@ -2,36 +2,93 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
 }
 html,
 body {
   width: 100%;
   height: 100%;
 }
-
-h1 {
-  color: rgb(255, 25, 140);
-  background-color: rgb(39, 255, 215);
-  text-align: center;
-}
-
 #main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: #ccffaa;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  gap: 4%;
+  background: #000000;
 }
 
-#div1 {
-  position: relative;
-  height: 50%;
-  width: 30vw;
-  background: #7bff23;
-  border: 2px solid black;
+#nav {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5vw;
+  padding-left: 5vw;
+  padding-right: 2vw;
 }
+#nav > h1 {
+  font-size: 2.2vw;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#nav2 {
+  height: 10%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+#nav2 > h1 {
+  font-size: 1.2vw;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.textBody {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  /* background: #000; */
+}
+
+.textBody > h1 {
+  height: 20%;
+  width: 60%;
+  position: relative;
+  font-size: 10vw;
+  top: 25%;
+  left: 5%;
+  letter-spacing: 2px;
+  z-index: 2;
+  /* background-color: #ff3434; */
+  color: #ffffff;
+  overflow: hidden;
+  background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304985.jpg");
+  background-size: Cover;
+  background-position: Center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* #text3 {
+  background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304985.jpg");
+  background-size: Cover;
+  background-position: Center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+} */
+/* .textBody > h1 > img {
+  height: 100%;
+  width: 100%; */
+  /* z-index: -2;
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text; */
+  /* background: #000; */
+  /* visibility: 50%; */
+  /* background-blend-mode: darken;
+} */
