@@ -56,7 +56,7 @@ gsap.to("#page2 > .img_box >img", {
   scrollTrigger: {
     trigger: "#page2",
     scroller: "#main" ,
-    markers: true,
+    // markers: true,
     start : "top -5%",
     end : "top -35%",
     scrub: 4,
@@ -69,7 +69,7 @@ gsap.to("#page3 > span", {
   scrollTrigger: {
     trigger: "#page3",
     scroller: "#main" ,
-    markers: true,
+    // markers: true,
     start : "top -5%",
     end : "top -35%",
     scrub: 4,
