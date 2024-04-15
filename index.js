@@ -1,3 +1,25 @@
+gsap.registerPlugin(ScrollTrigger);
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true
+});
+
+locoScroll.on("scroll", ScrollTrigger.update);
+ScrollTrigger.scrollerProxy("#main", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+});
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh();
+
+
 let t1 = gsap.timeline();
 
 t1.from("#nav>h1", {
@@ -33,7 +55,7 @@ gsap.to("#page2 > .img_box >img", {
   delay: 0.5,
   scrollTrigger: {
     trigger: "#page2",
-    scroller: "body" ,
+    scroller: "#main" ,
     markers: true,
     start : "top -5%",
     end : "top -35%",
@@ -46,7 +68,7 @@ gsap.to("#page3 > span", {
   transform: "translateX(-36%)",
   scrollTrigger: {
     trigger: "#page3",
-    scroller: "body" ,
+    scroller: "#main" ,
     markers: true,
     start : "top -5%",
     end : "top -35%",
